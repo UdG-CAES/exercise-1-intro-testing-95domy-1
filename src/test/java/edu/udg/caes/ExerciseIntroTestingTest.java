@@ -13,9 +13,21 @@ public class ExerciseIntroTestingTest {
     }
 
     @Test
+    public void testFindLastArtur() {
+        final int result = ExerciseIntroTesting.findLast(new int []{1, 2, 3}, 2);
+        assertEquals(result, 1);
+    }
+
+    @Test
     public void testLastZero(){
         final int result = ExerciseIntroTesting.lastZero(new int []{0, 1, 0});
         assertEquals(result, 2);
+    }
+
+    @Test
+    public void testLastZeroArtur() {
+        final int result = ExerciseIntroTesting.lastZero(new int []{1, 0, 2});
+        assertEquals(result, 1);
     }
 
     @Test
@@ -25,8 +37,20 @@ public class ExerciseIntroTestingTest {
     }
 
     @Test
+    public void testCountPositiveArtur() {
+        final int result = ExerciseIntroTesting.countPositive(new int[]{-4, 2, -1, 2});
+        assertEquals(result, 2);
+    }
+
+    @Test
     public void testOddOrPos(){
         final int result = ExerciseIntroTesting.oddOrPos(new int []{-3, -2, 0, 1, 4});
         assertEquals(result, 3);
+    }
+
+    @Test
+    public void testOddOrPosArtur(){
+        final int result = ExerciseIntroTesting.oddOrPos(new int []{1, 2, 3, 4});
+        assertEquals(result, 4);
     }
 }
